@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<style>
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
+}
+</style>
+	<meta charset="UTF-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	
+	<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+
+</head>
+
+<body>
+	
+	<nav>
+		<ul class="w3-navbar w3-black">
+			<li><a href="javascript:void(0)">Home</a></li>
+			<li><a href="menu.html">Menu</a></li>
+			<li><a href="location.html">Location & Openings</a></li>
+			<li><a href="delivery.html">Deliveries</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+	</nav>
+	
+	
+	
+	<!-- Slide Show-->
+	<section>
+	
+
+	<img class="mySlides" src="images/cafe1.jpg" style="width:100%">
+	<img class="mySlides" src="images/cafe2.jpg" style="width:100%">
+	<img class="mySlides" src="images/cafe3.jpg" style="width:100%">
+	
+	</section>
+	
+	<script>
+// Automatic Slideshow - change image every 3 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 3000);
+}
+</script>
+
+<section class="w3-container w3-center w3-content" style="max-width:600px">
+<h2 class="w3-wide">AROMA CAFE</h2>
+<p class="w3-opacity"><i>Coffee and Cakes</i></p>
+</section>
+
+<section class="w3-container w3-content w3-center" style="max-width:600px">
+<p class="w3-justify">
+This is a site for Aroma Cafe, which serves delicious cakes and coffee. You can see
+the various information about this cafe in this website. You can see the menu with price, contacts and locations using google maps too.
+</p>
+</section>
+
+<section class="w3-container w3-center w3-content" style="max-width:600px">
+<h2 class="w3-wide">OUR PROCESS</h2>
+<p class="w3-opacity"><i>This is how we create magic.</i></p>
+</section>
+
+<section class="w3-row-padding w3-center w3-light-grey">
+	<article class="w3-third">
+	<p>We Pick</p>
+	<p>The best beans,</p>
+	<img src="images/pick.jpeg" alt="coffee beans picking" style="width:100%">
+	</article>
+	<article class="w3-third">
+    <p>We Bake</p>
+	<p>The Freshest Dough,</p>
+    <img src="images/bake.jpg" alt="Random Name" style="width:100%">
+  </article>
+  <article class="w3-third">
+    <p>And Serve</p>
+	<p>A Delicious Meal.</p>
+    <img src="images/result.jpg" alt="Random Name" style="width:100%">
+  </article>
+</section>
+
+<section class="w3-container w3-content w3-center" style="max-width:600px; margin-top:10px;">
+<section class="w3-container w3-center w3-content" style="max-width:600px; border:solid 2px; margin:5px; background-color:#EF9A9A">
+<h3 class="w3-wide"><a href="menu.html" target="#"  style="text-decoration:none">CHECK OUR MENU</a></h3>
+
+</section>
+
+
+<section class="w3-container w3-center w3-content" style="max-width:600px; border:solid 2px; margin:5px;background-color:#E1BEE7"">
+<h3 class="w3-wide"><a href="location.html"  style="text-decoration:none">OUR LOCATION</a></h3>
+</section>
+
+
+<section class="w3-container w3-center w3-content" style="max-width:600px; border:solid 2px; margin:5px;background-color:#B2FF59"">
+<h3 class="w3-wide"><a href="delivery.html"  style="text-decoration:none">ORDER SOMETHING!</a></h3>
+</section>
+
+<section class="w3-container w3-center w3-content" style="max-width:600px; border:solid 2px; margin:5px; background-color:#90CAF9">
+<h3 class="w3-wide"><a href="CONTACT.html"  style="text-decoration:none">CONTACT US</a></h3>
+</section>
+
+</section>
+<!-- Footer -->
+<footer 
+style="margin-top:25px"
+class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
+ Talk to us, Talk about us.<br>
+  <a href="#"><i class="fa fa-facebook-official"></i></a>
+  <a href="#"><i class="fa fa-android"></i></a>
+  <a href="#"><i class="fa fa-twitter"></i></a>
+  <a href="#"><i class="fa fa-pinterest-p"></i></a>
+ 
+  <a href="#"><i class="fa fa-linkedin"></i></a>
+  <p class="w3-medium">
+   
+	
+	<!-- TIP: LAlt + 0169 = © -->
+	© Aroma Cafe 2016
+	<br>
+	<br>
+	Made By <a target="#" href="http://www.binigya.cf">Binigya Dahal.</a>
+  </p>
+</footer>
+
+	
+
+</body>
+
+</html>
