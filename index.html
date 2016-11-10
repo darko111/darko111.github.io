@@ -35,15 +35,27 @@ body, html {
   color: #777;
 }
 	
-	.fade{
-	
-		animation:demo 7s;
--moz-animation:demo 7s; /* Firefox */
--webkit-animation:demo 7s; /* Safari and Chrome */
--o-animation:demo 7s; /* Opera */
-animation:demo 7s infinite;
-		
-	}
+.fade-in {
+	opacity:0;  /* make things invisible upon start */
+	-webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+	-moz-animation:fadeIn ease-in 1;
+	animation:fadeIn ease-in 1;
+ 
+	-webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+	-moz-animation-fill-mode:forwards;
+	animation-fill-mode:forwards;
+ 
+	-webkit-animation-duration:1s;
+	-moz-animation-duration:1s;
+	animation-duration:1s;
+}
+ 
+.fade-in.one {
+-webkit-animation-delay: 0.7s;
+-moz-animation-delay: 0.7s;
+animation-delay: 0.7s;
+}
+ 
 	
 	
 </style>
@@ -72,7 +84,7 @@ animation:demo 7s infinite;
 		</ul>
 	</nav>
 	<br>
-	<section class="w3-container w3-center w3-content fade" style="max-width:600px; background-color:black;">
+	<section class="w3-container w3-center w3-content fade-in one" style="max-width:600px; background-color:black;">
 <h2 class="w3-wide">AROMA CAFE</h2>
 <p class="w3-opacity"><i>Coffee and Cakes</i></p>
 </section>
