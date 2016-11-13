@@ -4,7 +4,18 @@
 
 <head>
 	<title>Delivery - Aroma Cafe</title>
-	
+	<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="text/javascript" src="orderform04.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+window.onload = setupScripts;
+function setupScripts()
+{
+	var anOrder1 = new OrderForm();
+}
+//]]>
+</script>
 <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
 <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
 <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
@@ -140,11 +151,147 @@ We deliver everything on our delicious <a href="menu.html"> Menu</a> to your doo
 Call us: +91-8397958466
 </p>
 <p class="w3-center">
-Order Online: The Aroma Cafe App
+Order Online:
 </p>
+	<form id="frmOrder">
+<section class="w3-container w3-content w3-center w3-light-blues" style="max-width:600px">
+<p class="w3-justify">
+<h3>GET YOUR CAFFEINE</h3>
+<p class="w3-justify">Choose, from the finest coffee selection to satisfy your thirst for that perfect cup of coffee.</p>
+<p class="w3-justify">Note: Maximum number of coffees you can order per variant is 3, due to delivery issues. Sorry!</p>
+<input type="checkbox" id="chk0" />
+Creamy Mocha
+Rs.<span id="txtPrice0">80</span>
+<select id="sel0">
+	<option value="val0">0</option>
+	<option value="val1">1</option>
+	<option value="val2">2</option>
+	<option value="val3">3</option>
+	
+</select>
+</p>
+<p>
+<input type="checkbox" id="chk1" />
+Smooth Latte
+Rs.<span id="txtPrice1">70</span>
+<select id="sel1">
+	<option value="val0">0</option>
+	<option value="val1">1</option>
+	<option value="val2">2</option>
+	<option value="val3">3</option>
+	
+</select>
+</p>
+
+<p>
+<input type="checkbox" id="chk2" />
+Rough Black
+Rs.<span id="txtPrice2">40</span>
+<select id="sel2">
+	<option value="val0">0</option>
+	<option value="val1">1</option>
+	<option value="val2">2</option>
+	<option value="val3">3</option>
+	
+</select>
+</p>
+</section>
+<!-- CAKE -->
+<section class="w3-container w3-content w3-center w3-red" style="max-width:600px">
+<h3>PIECE OF CAKE!</h3>
+<p>Get ready to taste the taste of happiness, as you can now order our deliciously awesome cakes. From the creamy cream white to the strawberry-filled Choco Straw, you can never have enough!</p>
+
+<input type="checkbox" id="chk3" />
+Chocofill Pastry
+Rs.<span id="txtPrice3">90</span>
+<select id="sel3">
+	<option value="val0">0</option>
+	<option value="val1">1</option>
+	<option value="val2">2</option>
+	<option value="val3">3</option>
+	
+</select>
+</p>
+<p>
+<input type="checkbox" id="chk4" />
+Cream White
+Rs.<span id="txtPrice4">80</span>
+<select id="sel4">
+	<option value="val0">0</option>
+	<option value="val1">1</option>
+	<option value="val2">2</option>
+	<option value="val3">3</option>
+	
+</select>
+</p>
+
+<p>
+<input type="checkbox" id="chk5" />
+Donut Pastry
+Rs.<span id="txtPrice5">25</span>
+<select id="sel5">
+	<option value="val0">0</option>
+	<option value="val1">1</option>
+	<option value="val2">2</option>
+	<option value="val3">3</option>
+	
+</select>
+</p>
+
+<input type="checkbox" id="chk6" />
+Strawberry delight
+Rs.<span id="txtPrice6">100</span>
+<select id="sel6">
+	<option value="val0">0</option>
+	<option value="val1">1</option>
+	<option value="val2">2</option>
+	<option value="val3">3</option>
+	
+</select>
+</p>
+<p>
+<input type="checkbox" id="chk7" />
+Choco Straw
+Rs.<span id="txtPrice7">55</span>
+<select id="sel7">
+	<option value="val0">0</option>
+	<option value="val1">1</option>
+	<option value="val2">2</option>
+	<option value="val3">3</option>
+	
+</select>
+</p>
+
+<p>
+<input type="checkbox" id="chk8" />
+Royal Red
+Rs.<span id="txtPrice8">70</span>
+<select id="sel8">
+	<option value="val0">0</option>
+	<option value="val1">1</option>
+	<option value="val2">2</option>
+	<option value="val3">3</option>
+	
+</select>
+</p>
+
+<!-- END -->
+
+<p>Your Total Rs:
+<input type="text" id="txtTotal" size="8" disabled/>
+</p>
+</section>
+</form>
+
+	
+	
+	
+	
+	<!--
 <p class="w3-center green">
 <b>OFFER!</b> Get an extra 10% off when you order from App!
 </p>
+-->
 <p class="w3-center green">
 <b>NOTE:</b> Delivery charges are Rs.25 Only
 </p>
